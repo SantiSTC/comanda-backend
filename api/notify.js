@@ -22,6 +22,10 @@ if (!admin.apps.length) {
 }
 
 export default async function handler(req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Cambia esto al dominio de tu frontend en producción
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+
   if (req.method === "POST") {
     const { token, title, body } = req.body;
 
