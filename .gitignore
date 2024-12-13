@@ -6,7 +6,6 @@ node_modules/
 .dotenv
 
 # Firebase service account key (importante)
-restops-269bf-firebase-adminsdk-143um-990856a04e.json
 
 # Logs
 logs/
